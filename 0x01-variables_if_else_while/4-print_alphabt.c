@@ -10,10 +10,12 @@ int main(void)
 
 	while (al <= 'z')
 	{
-		if (al == 'q' || al == 'e')
-		continue;
 		putchar(al);
 		al++;
+		if (al == 'q' || al == 'e')
+		{
+			continue;
+		}
 	}
 	return (0);
 }
