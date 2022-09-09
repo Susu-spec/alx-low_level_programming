@@ -6,16 +6,14 @@
  */
 int main(void)
 {
-	int al = 'a';
+	int al;
 
-	while (al <= 'z')
+	do
 	{
-		putchar(al);
-		al++;
-		if (al == 'q' || al == 'e')
+		for (al = 'a'; al <= 'z'; al++)
 		{
-			continue;
+			putchar(al);
 		}
-	}
+	}while (al != 'q' || al != 'e');
 	return (0);
 }
