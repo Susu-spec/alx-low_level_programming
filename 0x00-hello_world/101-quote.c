@@ -7,8 +7,16 @@
  * Return: 1 indicates error
  *
  */
+void write(char *str) 
+{
+	if (*str == '\0')
+	return;
+	write(str + 1);
+	system ("echo *str");
+
+}
 int main(void)
 {
-	putchar("\"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	write("\"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 	return (1);
 }
