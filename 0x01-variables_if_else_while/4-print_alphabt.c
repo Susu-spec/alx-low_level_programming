@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int al;
+	int al = 'a';
 
 	while (al <= 'z')
 	{
