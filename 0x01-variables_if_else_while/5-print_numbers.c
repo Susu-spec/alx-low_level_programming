@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Return - 0 indicates success
+ * Return: 0 indicates success
  *
  */
 int main(void)
@@ -14,4 +14,5 @@ int main(void)
 		printf("%d", i);
 	}
 	printf("\n");
+	return (0);
 }
