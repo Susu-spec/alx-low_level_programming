@@ -8,12 +8,14 @@ int main(void)
 {
 	int al;
 
-	do
+	while (al <= 'z')
 	{
-		for (al = 'a'; al <= 'z'; al++)
+		if (al == 'q' || al == 'e')
 		{
-			putchar(al);
+			al++;
 		}
-	}while (al != 'q' || al != 'e');
+		putchar(al);
+		al++;
+	}
 	return (0);
 }
