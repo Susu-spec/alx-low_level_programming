@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * print_alphabet - function prototype
- *
  * main - entry point
  *
- * Reurn : 0 indicates success
+ * print_alphabet - prints alphabet
+ *
+ * Returns 0 indicates success
+ *
  */
 
 void print_alphabet(void)
@@ -13,9 +14,9 @@ void print_alphabet(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar("%c", c);
+		_putchar(c);
 	}
-	_putchar("\n");
+	_putchar('\n');
 	return;
 }
 
@@ -24,4 +25,3 @@ int main(void)
 	print_alphabet();
 	return (0);
 }
-
