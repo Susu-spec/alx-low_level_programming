@@ -16,16 +16,10 @@ void print_alphabet_10x(void)
 	{
 		for (c = 'a'; c <= 'z'; c++)
 		{
-			_putchar("%c", c);
+			_putchar(c);
 		}
-		_putchar("\n");
+		_putchar('\n');
 	}
-	return;
-}
-
-int main(void)
-{
-	print_alphabet_10x();
 	return (0);
 }
 
