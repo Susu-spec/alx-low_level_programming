@@ -2,12 +2,10 @@
 /**
 * print_alphabet_x10 - prints alphabet 10 times
 *
-* main - entry point
-* 
 * Return - 0 indicates success
 */
 
-void print_alphabet_10x(void)
+void print_alphabet_x10(void)
 {
 	int i;
 	char c;
@@ -20,6 +18,5 @@ void print_alphabet_10x(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
 
