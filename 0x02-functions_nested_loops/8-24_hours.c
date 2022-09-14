@@ -16,11 +16,11 @@ void jack_bauer(void)
 				{
 					if (i == 2 && j == 3 && k == 5 && l == 9)
 						continue;
-					_putchar(i);
-					_putchar(j);
+					_putchar(i + '0');
+					_putchar(j + '0');
 					_putchar(':');
-					_putchar(k);
-					_putchar(l);
+					_putchar(k + '0');
+					_putchar(l + '0');
 					_putchar('\n');
 				}
 			}
