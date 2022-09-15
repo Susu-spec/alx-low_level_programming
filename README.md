@@ -1,1 +1,1 @@
-Debugging project
+More functions and nested loops tasks
