@@ -1,0 +1,26 @@
+#include "main.h"
+/**
+ * main - entry point
+ *
+ * print_alphabet - prints alphabet
+ *
+ * Returns 0 indicates success
+ *
+ */
+
+void print_alphabet(void)
+{
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
+}
+
+int main(void)
+{
+	print_alphabet();
+	return (0);
+}
