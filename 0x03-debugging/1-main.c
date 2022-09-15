@@ -2,7 +2,6 @@
 
 /**
  * main - causes an infinite loop
- * @while function - @i does not increment
  * Return: 0
  */
 
