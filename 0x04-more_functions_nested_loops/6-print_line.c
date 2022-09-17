@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_line - prints '_' n times
+ * @n: int argument
  */
 
 void print_line(int n)
