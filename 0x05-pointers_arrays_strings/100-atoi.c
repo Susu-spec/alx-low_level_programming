@@ -13,7 +13,7 @@ int _atoi(char *c)
 	unsigned int value = 0;
 	int sign = 1;
 
-	while (*c++)
+	do
 	{
 		if (*c == '-')
 			sign *= -1;
@@ -23,7 +23,7 @@ int _atoi(char *c)
 		}
 		else if (value > 0)
 			break;
-	}
+	} while (*c++);
 
 	return (value * sign);
 }
