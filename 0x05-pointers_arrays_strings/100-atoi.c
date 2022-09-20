@@ -13,8 +13,7 @@ int _atoi(char *c)
 	unsigned int value = 0;
 	int sign = 1;
 
-	do
-	{
+	do {
 		if (*c == '-')
 			sign *= -1;
 		else if ((*c >= '0') && (*c <= '9'))
