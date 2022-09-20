@@ -21,6 +21,8 @@ int _atoi(char *c)
 		{
 			value = value  * 10 + (int)(*c - '0');
 		}
+		else if (value > 0)
+			break;
 	}
 
 	return (value * sign);
