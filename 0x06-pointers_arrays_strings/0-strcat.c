@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src)
 {
 	int count;
 
-	count = _strlen(dest);
+	count = _strlen(src);
 	dest = dest + count;
 	dest = _strcpy(dest, src);
 
