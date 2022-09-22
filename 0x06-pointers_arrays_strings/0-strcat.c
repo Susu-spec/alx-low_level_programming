@@ -1,7 +1,5 @@
 #include "main.h"
 
-int _strlen(char *dest);
-char *_strcpy(char *dest, char *src);
 /**
  * _strcat - concatenate two string
  * @src: string 1
@@ -11,50 +9,15 @@ char *_strcpy(char *dest, char *src);
 
 char *_strcat(char *dest, char *src)
 {
-	int count;
+	int count, len = 0;
 
-	count = _strlen(src);
-	dest = dest + count;
-	dest = _strcpy(dest, src);
-
+	while (dest[len])
+		len++;
+	for (count = 0; src[count] != '\0'; count++)
+	{
+		dest[len] = src[count];
+		len++;
+	}
+	dest[len] = '\0';
 	return (dest);
 }
-
-/**
- * _strlen - returns length of string
- * @dest: string parameter
- * Return: length of string
- */
-
-int _strlen(char *dest)
-{
-	int count = 0;
-
-	while (*dest != '\0')
-	{
-		count++;
-		dest++;
-	}
-
-	return (count);
-}
-
-/**
- * _strcpy - copies src string to dest
- * @dest: destination string
- * @src: source string
- * Return: pointer to copied string
- */
-
-char *_strcpy(char *dest, char *src)
-{
-	char *saved = dest;
-
-	while (*src)
-	{
-		*dest++ = *src++;
-	}
-	*dest = '\0';
-	return (saved);
-}
-
