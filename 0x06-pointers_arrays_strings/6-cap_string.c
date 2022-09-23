@@ -8,17 +8,17 @@
  */
 char *cap_string(char *x)
 {
-	char spr[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', ' ', '	'};
+	char s[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', ' ', '	'};
 	int n, i, len;
 
 	n = 0;
-	len = strlen(spr);
+	len = strlen(s);
 	while (x[n])
 	{
 		i = 0;
 		while (i < len)
 		{
-			if ((n == 0 || x[n - 1] == spr[i]) && (x[n] >= 'a' && x[n] <= 'z'))
+			if ((n == 0 || x[n - 1] == s[i]) && (x[n] >= 'a' && x[n] <= 'z'))
 			{
 				x[n] = x[n] - 32;
 			}
