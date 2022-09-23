@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * leet - encodes string parameter into 1337
@@ -15,7 +14,7 @@ char *leet(char *x)
 	char str[5] = {'4', '3', '0', '7', '1'};
 
 	a = 0;
-	c = strlen(x);
+	c = 5;
 	while (x[a])
 	{
 		b = 0;
