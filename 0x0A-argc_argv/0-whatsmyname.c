@@ -3,6 +3,8 @@
 
 /**
  * main - prints its name
+ * @argc: number of command line arguments
+ * @argv: string argument
  * Return: 0 indicates success
  */
 
