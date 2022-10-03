@@ -6,6 +6,7 @@
  * main - multiply argument strings
  * @argc: argument count
  * @argv: argument strings
+ * Return: 0 indicates success, 1 indicates error
  */
 
 int main(int argc, char *argv[])
