@@ -2,6 +2,8 @@
 
 /**
  * main - print arguments line by line
+ * @argc: argument count
+ * @argv: argument strings
  * Return: 0 indicates success
  */
 
