@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
+int check_num(char *str);
 /**
  * main - multiply argument values
  * @argc: argument count
@@ -10,14 +13,14 @@
 
 int main(int argc, char *argv[])
 {
-	int i, add, num;
+	int i, add;
 
+	add = 0;
 	for (i = 1; i < argc; i++)
 	{
-		if ((*argv[i] < '0') || (*argv[i] > '9'))
+		if (check_num(argv[i]))
 		{
-			printf("Error\n");
-			return (1);
+			add += atoi(argv[i]);
 		}
 		else if (argc == 1)
 		{
@@ -25,14 +28,31 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			num = atoi(argv[i]);
-			add += num;
+			printf("Error\n");
+			return (1);
 		}
 	}
 
 	printf("%i\n", add);
 	return (0);
 }
+
+int check_num(char *str)
+{
+	unsigned int i;
+
+	i = 0;
+	while (i < strlen(str))
+	{
+		if(!isdigit(str[i]))
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
+}
+
 
 
 
