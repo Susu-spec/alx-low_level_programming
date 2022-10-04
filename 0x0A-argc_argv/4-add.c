@@ -37,6 +37,11 @@ int main(int argc, char *argv[])
 	return (0);
 }
 
+/**
+ * check_num - check string for digits
+ * @str: string parameter
+ * Return: 0 indicates not a digit, 1 indicates digit
+ */
 int check_num(char *str)
 {
 	unsigned int i;
@@ -44,7 +49,7 @@ int check_num(char *str)
 	i = 0;
 	while (i < strlen(str))
 	{
-		if(!isdigit(str[i]))
+		if (!isdigit(str[i]))
 		{
 			return (0);
 		}
