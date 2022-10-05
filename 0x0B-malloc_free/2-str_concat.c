@@ -14,13 +14,13 @@ char *str_concat(char *s1, char *s2)
 	size_t len1, len2, i, j, total;
 	char *ptr;
 
-	len1 = strlen(s1);
-	len2 = strlen(s2);
-	total = len1 + len2;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	len1 = strlen(s1);
+	len2 = strlen(s2);
+	total = len1 + len2 + 1;
 	ptr = malloc(len1 + len2 + 1);
 	if (ptr == NULL)
 		return (NULL);
