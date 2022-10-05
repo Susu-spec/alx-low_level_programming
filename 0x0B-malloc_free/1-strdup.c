@@ -10,13 +10,22 @@
 
 char *_strdup(char *str)
 {
-	void *new;
+	unsigned int i;
 	size_t length;
+	char *new;
 
 	length = strlen(str) + 1;
+	i = 0;
+	if (str == NULL)
+		return (NULL);
 	new = malloc(length);
 	if (new == NULL)
 		return (NULL);
-	return ((char *) memcpy(new, str, length));
-	free(new);
+	while (i < length)
+	{
+		new[i] = str[i];
+		i++;
+	}
+	new[length] = '\0';
+	return (new);
 }
