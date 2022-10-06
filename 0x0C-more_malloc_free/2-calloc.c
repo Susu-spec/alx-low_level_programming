@@ -1,4 +1,4 @@
-#include "msin.h"
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -10,10 +10,10 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *array;
-	int i;
+	char *array;
+	unsigned int i;
 
-	array = (int *) malloc(nmemb * size);
+	array = malloc(nmemb * size);
 	if (array == NULL || nmemb == 0 || size == 0)
 		return (NULL);
 	for (i = 0; i < nmemb; i++)
