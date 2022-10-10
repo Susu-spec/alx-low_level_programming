@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - prints filename
+ * return: 0
+ */
+
 int main(void)
 {
 	printf("%s\n", __FILE__);
