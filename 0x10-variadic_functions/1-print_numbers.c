@@ -8,7 +8,7 @@
  * @n: number of int arguments
  */
 
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i, value;
@@ -18,13 +18,9 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	{
 		value = va_arg(args, int);
 		printf("%i", value);
-		if (i != n - 1)
+		if (i != n - 1 && separator != NULL)
 		{
-			printf("%i", value);
-			if (seperator != NULL)
-			{
-				printf("%s", seperator);
-			}
+			printf("%s", separator);
 		}
 	}
 	va_end(args);
