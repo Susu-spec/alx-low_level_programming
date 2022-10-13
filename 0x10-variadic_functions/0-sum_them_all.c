@@ -2,6 +2,12 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+/**
+ * sum_them_all - sums up all arguments passed
+ * @n: last argument
+ * Return: sum
+ */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i, sum;
