@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - print list of argument values
- * @seperator: char pointer
+ * @separator: char pointer
  * @n: number of int arguments
  */
 
